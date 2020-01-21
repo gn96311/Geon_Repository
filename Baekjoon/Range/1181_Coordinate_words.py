@@ -4,9 +4,13 @@ N = int(sys.stdin.readline())
 
 result = []
 for i in range(N):
-    result.append(str(sys.stdin.readline()[:-1]))
+    word = str(sys.stdin.readline()[:-1])
+    if word in result:
+        pass
+    else:
+        result.append(word)
 
-result.sort(key = lambda x: (len(x), ascii(x[0])))
+result.sort(key = lambda x: (len(x), x))
 
 for j in result:
     print(j)
