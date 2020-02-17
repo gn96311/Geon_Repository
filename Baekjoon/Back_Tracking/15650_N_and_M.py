@@ -15,3 +15,5 @@ def solve(depth, start, N, M):
             result.append(i+1)
             solve(depth+1, 1, N, M)
             check[i] = False
+
+#아직 못품ㅅㅂ
